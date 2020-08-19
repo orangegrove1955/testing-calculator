@@ -8,7 +8,7 @@ describe("App component", () => {
 
   beforeEach(() => (wrapper = shallow(<App />)));
 
-  it("should match snapshot render", () => {
+  it("should match App snapshot render", () => {
     expect(wrapper).toMatchSnapshot();
   });
 
