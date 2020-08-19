@@ -9,6 +9,7 @@ A calculator built with React, using Jest and Enzyme for testing, deployed to He
 - React
 - Shallow render tests
 - Unit testing
+- Snapshot testing
 - Heroku deployments
 
 # Demo
