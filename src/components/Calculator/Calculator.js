@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Calculator.css";
 
-export default function Calculator() {
+const Calculator = () => {
   const [displayValue, setDisplayValue] = useState(0);
   const [numbers, setNumbers] = useState([]);
   const [operators, setOperators] = useState([]);
@@ -21,4 +21,6 @@ export default function Calculator() {
   };
 
   return <div className="calculator-container"></div>;
-}
+};
+
+export default Calculator;
