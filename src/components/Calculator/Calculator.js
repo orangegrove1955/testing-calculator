@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./Calculator.css";
 
 export default function Calculator() {
   const [displayValue, setDisplayValue] = useState(0);

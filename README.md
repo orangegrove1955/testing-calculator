@@ -7,6 +7,7 @@ A calculator built with React, using Jest and Enzyme for testing, deployed to He
 - Jest
 - Enzyme
 - React
+- CSS Variables
 - Shallow render tests
 - Unit testing
 - Snapshot testing
