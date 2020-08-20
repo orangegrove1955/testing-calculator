@@ -2,6 +2,7 @@ import React from "react";
 import { shallow } from "enzyme";
 import Calculator from "./Calculator";
 import Display from "../Display/Display";
+import Keypad from "../Keypad/Keypad";
 
 describe("Calculator component", () => {
   let wrapper;
@@ -26,5 +27,11 @@ describe("Calculator component", () => {
     ).toEqual(true);
   });
 
-  // it("should render a Keypad component", () => {});
+  it("should render a Keypad component", () => {
+    // Mock values to pass to into Keypad
+    const keypadMock = jest.fn();
+    const keypadValues = keypadMock.mockReturnValueOnce();
+
+    expect(wrapper.containsMatchingElement(<Keypad />)).toEqual(true);
+  });
 });

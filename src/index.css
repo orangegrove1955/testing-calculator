@@ -7,6 +7,7 @@
 
   /* Display styles */
   --display-text-color: #23e000;
+  --display-background-color: black;
   --display-text-size: 4em;
   --display-text-weight: 400;
   --display-height: 24%;

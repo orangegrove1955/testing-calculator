@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Calculator.css";
 import Display from "../Display/Display";
+import Keypad from "../Keypad/Keypad";
 
 const Calculator = () => {
   const [displayValue, setDisplayValue] = useState(0);
@@ -24,6 +25,7 @@ const Calculator = () => {
   return (
     <div className="calculator-container">
       <Display displayValue={displayValue} />
+      <Keypad />
     </div>
   );
 };
