@@ -1,5 +1,5 @@
 import React from "react";
-import { shallow } from "enzyme";
+import { shallow, render } from "enzyme";
 import Display from "../Display/Display";
 
 describe("Calculator component", () => {
@@ -9,6 +9,12 @@ describe("Calculator component", () => {
 
   it("should render a <div />", () => {
     expect(wrapper.find("div").length).toEqual(1);
+  });
+
+  it("should render a display value in a p", () => {
+    let deepWrapper = render(<Display displayValue={0} />);
+    const displayP = deepWrapper.find(".display-value");
+    expect(displayP.length).toEqual(1);
   });
 
   it("correctly renders 0 value of displayValue", () => {
