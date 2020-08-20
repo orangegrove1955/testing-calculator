@@ -7,6 +7,10 @@ describe("Calculator component", () => {
 
   beforeEach(() => (wrapper = shallow(<Display displayValue={0} />)));
 
+  it("should match Display snapshot render", () => {
+    expect(wrapper).toMatchSnapshot();
+  });
+
   it("should render a <div />", () => {
     expect(wrapper.find("div").length).toEqual(1);
   });
